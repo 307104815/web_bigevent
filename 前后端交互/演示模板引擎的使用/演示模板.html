@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.导入模板 -->
+    <script src="./template-web.js"></script>
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <!-- 3.定义模板，模板html必须定义到script中 -->
+    <script type="text/html" id="tpl-user">
+        <h1>{{name}}-----{{age}}</h1>
+    </script>
+
+    <script>
+        // 2.定义需要渲染的对象
+        var data = {
+            name: 'zs',
+            age: 20
+        }
+
+        // 4.调用template函数
+        var htmlStr = template('tpl-user', data)
+        console.log(htmlStr);
+
+
+        // 5.渲染html结构
+        $('#container').html(htmlStr)
+    </script>
+</body>
+
+</html>

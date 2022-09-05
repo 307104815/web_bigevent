@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 计算班级总成绩和平均分
+
+        // var sum = 0;
+        // var average = 0;
+        // var num = prompt('请输入班级学生总人数：');
+        // for (var i = 1; i <= num; i++) {
+        //     var score = prompt('请您输入第' + i + '个学生成绩');
+        //     sum = sum + parseFloat(score);
+        // }
+        // average = sum / num;
+        // alert('班级平均分是' + average);
+        // alert('班级总成绩是：' + sum);
+
+
+
+        // 双for循环
+
+        // var rows = prompt('请您输入行数：');
+        // var cols = prompt('请您输入列数：');
+        // var str = '';
+        // for (var i = 1; i <= rows; i++) {
+        //     for (var j = 1; j <= cols; j++) {
+        //         str = str + '☆';
+        //     }
+        //     str = str + '\n';
+        // }
+        // alert(str);
+
+
+        //打印十行十列倒三角形的五角星
+
+        // var str = '';
+        // for (var i = 1; i <= 10; i++) {
+        //     for (var j = i; j <= 10; j++) {
+        //         str = str + '☆';
+        //     }
+        //     str = str + '\n';
+        // }
+        // alert(str);
+
+
+
+        //打印九九乘法表
+
+        var str = '';
+        for (var i = 1; i < 10; i++) {
+            for (var j = 1; j <= i; j++) {
+                str += j + '×' + i + '=' + i * j + '\t';
+            }
+            str = str + '\n';
+        }
+        alert(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

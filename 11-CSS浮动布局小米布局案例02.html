@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 1226px;
+            height: 285px;
+            /* 水平居中 */
+            margin: 0 auto;
+            background-color: gray;
+        }
+        
+        .box li {
+            width: 296px;
+            height: 285px;
+            float: left;
+            /* 给每个小盒子做个右外边距 */
+            margin-right: 14px;
+            background-color: aquamarine;
+        }
+        
+        li {
+            /* 清楚无序列表前的小圆点 */
+            list-style: none;
+        }
+        
+        .box .last {
+            /* 最后一个盒子不需要外边距 */
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="last">4</li>
+    </ul>
+</body>
+
+</html>

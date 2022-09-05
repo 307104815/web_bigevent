@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .jd {
+            width: 120px;
+            height: 249px;
+            background-color: pink;
+            position: relative;
+        }
+        
+        .jd span {
+            position: absolute;
+            right: 15px;
+            top: -10px;
+            /* 她的宽高必须设置为0 */
+            width: 0;
+            height: 0;
+            /* 为了照顾兼容性 */
+            line-height: 0;
+            font-style: 0;
+            border: 5px solid transparent;
+            /* 三角形的朝向为上 */
+            border-bottom-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jd">
+        <span>
+
+        </span>
+    </div>
+</body>
+
+</html>
